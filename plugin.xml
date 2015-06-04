@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
       id="com.bosch_smart_gardening.wphelper"
-      version="0.1.0">
+      version="0.1.1">
     <name>WpHelper</name>
     <description>Windows Phone Helper</description>
     <license>MIT</license>
@@ -12,6 +12,10 @@
     <js-module src="www/WpHelper.js" name="WpHelper">
         <clobbers target="WpHelper" />
     </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
 
     <!-- wp8 -->
     <platform name="wp8">
