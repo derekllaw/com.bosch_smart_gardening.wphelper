@@ -1,4 +1,5 @@
 using System;
+using Windows.Graphics.Display;
 
 namespace WPCordovaClassLib.Cordova.Commands
 {
