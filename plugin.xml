@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="com.bosch_smart_gardening.wphelper"
+      version="0.1.0">
+    <name>WpHelper</name>
+    <description>Windows Phone Helper</description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/WpHelper.js" name="WpHelper">
+        <clobbers target="WpHelper" />
+    </js-module>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WpHelper">
+                <param name="wp-package" value="WpHelper"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp/WpHelper.cs" />
+    </platform>
+
+</plugin>
