@@ -1,5 +1,4 @@
 using System;
-using Windows.Graphics.Display;
 
 namespace WPCordovaClassLib.Cordova.Commands
 {
@@ -11,15 +10,16 @@ namespace WPCordovaClassLib.Cordova.Commands
       PluginResult result;
       if (upperCase != "")
       {
-        result = new PluginResult(PluginResult.Status.OK, upperCase);
+        result = new PluginResult(PluginResult.Status.OK, upperCase + " portrait");
       } else
       {
         result = new PluginResult(PluginResult.Status.ERROR, upperCase);
       }
 
-      Windows.Graphics.Display.DisplayInformation.AutoRotationPreferences = Windows.Graphics.Display.DisplayOrientations.Portrait;
-
-      Deployment.Current.Dispatcher.BeginInvoke(() => { SystemTray.IsVisible = false; });
+      this.Dispatcher.BeginInvoke((Action)(() =>
+      {
+        this.SuppoertedOrientations = "portrait";
+      }));
 
       DispatchCommandResult(result);
     }
