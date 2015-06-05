@@ -10,7 +10,7 @@ namespace WPCordovaClassLib.Cordova.Commands
       PluginResult result;
       if (upperCase != "")
       {
-        result = new PluginResult(PluginResult.Status.OK, upperCase + " portrait");
+        result = new PluginResult(PluginResult.Status.OK, "portrait");
       } else
       {
         result = new PluginResult(PluginResult.Status.ERROR, upperCase);
@@ -18,7 +18,7 @@ namespace WPCordovaClassLib.Cordova.Commands
 
       this.Dispatcher.BeginInvoke((Action)(() =>
       {
-        this.SuppoertedOrientations = "portrait";
+        this.SuppoertedOrientations = SupportedPageOrientation.Portrait;
       }));
 
       DispatchCommandResult(result);
