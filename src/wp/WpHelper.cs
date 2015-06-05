@@ -18,7 +18,7 @@ namespace WPCordovaClassLib.Cordova.Commands
 
       this.Dispatcher.BeginInvoke((Action)(() =>
       {
-        this.SuppoertedOrientations = SupportedPageOrientation.Portrait;
+        this.SupportedOrientations = SupportedPageOrientation.Portrait;
       }));
 
       DispatchCommandResult(result);
