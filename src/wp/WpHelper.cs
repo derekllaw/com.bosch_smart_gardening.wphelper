@@ -19,6 +19,8 @@ namespace WPCordovaClassLib.Cordova.Commands
 
       Windows.Graphics.Display.DisplayInformation.AutoRotationPreferences = Windows.Graphics.Display.DisplayOrientations.Portrait;
 
+      Deployment.Current.Dispatcher.BeginInvoke(() => { SystemTray.IsVisible = false; });
+
       DispatchCommandResult(result);
     }
   }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
       id="com.bosch_smart_gardening.wphelper"
-      version="0.1.1">
+      version="0.1.2">
     <name>WpHelper</name>
     <description>Windows Phone Helper</description>
     <license>MIT</license>
